@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    header
+        nav(class="navbar navbar-default")
+            div(class="container")
+                div(class="navbar-header")
+                    a(class="navbar-brand" href="/") Angular Routing Example
+
+
+            ul(class="nav navbar-nav navbar-right")
+                li
+                    a(href="/") Home
+                li
+                    a(href="/about") About
+                li
+                    a(href="/contact") Contact
+                li
+                    a(href="/users") Users
+
+    #main
+
+        <!-- ng-view will display injected content -->
+        div(ng-view)
